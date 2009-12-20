@@ -12,18 +12,21 @@ namespace System
 		class Object
 		{
 			public:
-				operator const System::Object&() const { return _value; }
+				~Object() { if(_temporary) delete _value; }
 			
-				Object(const System::Object& value) : _value(value) { }
-				Object(int value) : _value(Int32(value)) { }
-				Object(float value) : _value(Float(value)) { }
-				Object(bool value) : _value(Boolean(value)) { }
-				Object(char value) : _value(Char(value)) { }
-				Object(const char* value) : _value(String(value)) { }
+				operator const System::Object&() const { return *_value; }
+			
+				Object(const System::Object& value) : _temporary(false), _value(&value) { }
+				Object(int value) : _temporary(true), _value(new Int32(value)) { }
+				Object(float value) : _temporary(true), _value(new Float(value)) { }
+				Object(bool value) : _temporary(true), _value(new Boolean(value)) { }
+				Object(char value) : _temporary(true), _value(new Char(value)) { }
+				Object(const char* value) : _temporary(true), _value(new String(value)) { }
 				
-				String ToString() const { return _value.ToString(); }
+				String ToString() const { return _value->ToString(); }
 			private:
-				const System::Object& _value;
+				bool _temporary;
+				const System::Object* _value;
 		};
 		
 		friend class String;
