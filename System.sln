@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{2857B73E-F847-4B02-9238-064979017E93}") = "Test", "Test\Test.cproj", "{03C7834A-5E57-43B5-8006-C977DED49550}"
+EndProject
+Project("{2857B73E-F847-4B02-9238-064979017E93}") = "System", "System\System.cproj", "{D55909D8-63AE-48CB-B8D6-6269728B9E9E}"
+EndProject
+Project("{9344bdbb-3e7f-41fc-a0dd-8665d75ee146}") = "Packages", "Packages.mdproj", "{9AFBDE39-FA9A-4CD9-B4BC-7C8F8793553C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03C7834A-5E57-43B5-8006-C977DED49550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C7834A-5E57-43B5-8006-C977DED49550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C7834A-5E57-43B5-8006-C977DED49550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C7834A-5E57-43B5-8006-C977DED49550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFBDE39-FA9A-4CD9-B4BC-7C8F8793553C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFBDE39-FA9A-4CD9-B4BC-7C8F8793553C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFBDE39-FA9A-4CD9-B4BC-7C8F8793553C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFBDE39-FA9A-4CD9-B4BC-7C8F8793553C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55909D8-63AE-48CB-B8D6-6269728B9E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55909D8-63AE-48CB-B8D6-6269728B9E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55909D8-63AE-48CB-B8D6-6269728B9E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55909D8-63AE-48CB-B8D6-6269728B9E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 0.1
+		StartupItem = Test\Test.cproj
+	EndGlobalSection
+EndGlobal

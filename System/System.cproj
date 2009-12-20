@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D55909D8-63AE-48CB-B8D6-6269728B9E9E}</ProjectGuid>
+    <Compiler>
+      <Compiler ctype="GppCompiler" />
+    </Compiler>
+    <Language>CPP</Language>
+    <Target>Bin</Target>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineSymbols>DEBUG MONODEVELOP</DefineSymbols>
+    <SourceDirectory>.</SourceDirectory>
+    <OutputName>System</OutputName>
+    <CompileTarget>StaticLibrary</CompileTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <DefineSymbols>MONODEVELOP</DefineSymbols>
+    <SourceDirectory>.</SourceDirectory>
+    <OptimizationLevel>3</OptimizationLevel>
+    <OutputName>System</OutputName>
+    <CompileTarget>StaticLibrary</CompileTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="String.h" />
+    <None Include="System.h" />
+    <None Include="Console.h" />
+    <None Include="Object.h" />
+    <None Include="Boolean.h" />
+    <None Include="Int32.h" />
+    <None Include="Exception.h" />
+    <None Include="DivideByZeroException.h" />
+    <None Include="ArgumentOutOfRangeException.h" />
+    <None Include="IndexOutOfRangeException.h" />
+    <None Include="Char.h" />
+    <None Include="Float.h" />
+    <None Include="FormatException.h" />
+    <None Include="Double.h" />
+    <None Include="Collections\Generic\Queue.h" />
+    <None Include="InvalidOperationException.h" />
+    <None Include="Collections\Generic\Stack.h" />
+    <None Include="Collections\Generic\Array.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="String.cpp" />
+    <Compile Include="Console.cpp" />
+    <Compile Include="Boolean.cpp" />
+    <Compile Include="Int32.cpp" />
+    <Compile Include="Exception.cpp" />
+    <Compile Include="DivideByZeroException.cpp" />
+    <Compile Include="ArgumentOutOfRangeException.cpp" />
+    <Compile Include="IndexOutOfRangeException.cpp" />
+    <Compile Include="Char.cpp" />
+    <Compile Include="Object.cpp" />
+    <Compile Include="Float.cpp" />
+    <Compile Include="FormatException.cpp" />
+    <Compile Include="Double.cpp" />
+    <Compile Include="InvalidOperationException.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Collections\" />
+    <Folder Include="Collections\Generic\" />
+  </ItemGroup>
+</Project>

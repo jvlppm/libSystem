@@ -1,0 +1,5 @@
+Name: System
+Description: 
+Version: 0.1
+Libs: -L/home/joao/Desktop/System/System/bin/Debug -lSystem
+Cflags: -I/home/joao/Desktop/System/System -I/home/joao/Desktop/System/System/Collections/Generic

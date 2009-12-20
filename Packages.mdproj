@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AFBDE39-FA9A-4CD9-B4BC-7C8F8793553C}</ProjectGuid>
+    <Packages>
+      <Packages xmlns="">
+        <Package name="Linux Binaries">
+          <Builder targetFile="System-linux.tar.gz" platform="Linux" configuration="Debug" ctype="BinariesZipPackageBuilder">
+            <ChildEntries>
+              <SolutionItemReference path="System\System.cproj" />
+            </ChildEntries>
+            <RootEntry path="System.sln" id="{4FCD8C7A-EE3A-43AC-BCC8-9A729B98E093}" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+</Project>
