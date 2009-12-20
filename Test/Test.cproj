@@ -13,7 +13,7 @@
     <Target>Bin</Target>
     <Packages>
       <Packages>
-        <Package file="/home/joao/Desktop/System/System/System.md.pc" name="System" IsProject="true" />
+        <Package file="/home/joao/Projects/System/System/System.md.pc" name="System" IsProject="true" />
       </Packages>
     </Packages>
   </PropertyGroup>
@@ -24,6 +24,7 @@
     <SourceDirectory>.</SourceDirectory>
     <OutputName>Test</OutputName>
     <CompileTarget>Bin</CompileTarget>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>

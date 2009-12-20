@@ -7,12 +7,17 @@ int Main()
 {
 	try
 	{
-		Array<string> novo = ((string) "12;3;4;56").Split(';');
+		string example = "12;3;4;56";
+		Console::WriteLine("Original string: \"{0}\"", example);
+		
+		Array<string> novo = example.Split(';');
+		
+		Console::WriteLine("string splitted on \';\'");
 		
 		for(int i = 0; i < novo.Length; i++)
 			Console::WriteLine(novo[i]);
 			
-		Console::WriteLine(novo.Length);
+		Console::WriteLine("Length of splitted array: {0}", novo.Length);
 	}
 	catch(Exception& ex)
 	{
