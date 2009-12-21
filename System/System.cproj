@@ -48,6 +48,8 @@
     <None Include="InvalidOperationException.h" />
     <None Include="Collections\Generic\Stack.h" />
     <None Include="Collections\Generic\Array.h" />
+    <None Include="IO\StreamWriter.h" />
+    <None Include="IO\TextWriter.h" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="String.cpp" />
@@ -64,9 +66,12 @@
     <Compile Include="FormatException.cpp" />
     <Compile Include="Double.cpp" />
     <Compile Include="InvalidOperationException.cpp" />
+    <Compile Include="IO\StreamWriter.cpp" />
+    <Compile Include="IO\TextWriter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Collections\" />
     <Folder Include="Collections\Generic\" />
+    <Folder Include="IO\" />
   </ItemGroup>
 </Project>

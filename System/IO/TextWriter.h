@@ -1,0 +1,53 @@
+#pragma once
+#include "../String.h"
+#include "../Int32.h"
+#include "../Float.h"
+#include "../Char.h"
+#include "../Boolean.h"
+
+namespace System
+{
+	namespace IO
+	{
+		class TextWriter
+		{
+			class Object
+			{
+				public:
+					~Object() { if(_temporary) delete _value; }
+				
+					operator const System::Object&() const { return *_value; }
+				
+					Object(const System::Object& value) : _temporary(false), _value(&value) { }
+					Object(int value) : _temporary(true), _value(new Int32(value)) { }
+					Object(float value) : _temporary(true), _value(new Float(value)) { }
+					Object(bool value) : _temporary(true), _value(new Boolean(value)) { }
+					Object(char value) : _temporary(true), _value(new Char(value)) { }
+					Object(const char* value) : _temporary(true), _value(new String(value)) { }
+					
+					String ToString() const { return _value->ToString(); }
+				private:
+					bool _temporary;
+					const System::Object* _value;
+			};
+			
+			public:
+				void Write(const Object& obj);
+				void Write(const String&, const Object&);
+				void Write(const String&, const Object&, const Object&);
+				void Write(const String&, const Object&, const Object&, const Object&);
+				void Write(const String&, const Object&, const Object&, const Object&, const Object&);
+				
+				void WriteLine();
+				void WriteLine(const Object& obj);
+				void WriteLine(const String&, const Object&);
+				void WriteLine(const String&, const Object&, const Object&);
+				void WriteLine(const String&, const Object&, const Object&, const Object&);
+				void WriteLine(const String&, const Object&, const Object&, const Object&, const Object&);
+				
+			private:
+				virtual void write(const String&) = 0;
+				virtual void writeLine(const String&) = 0;
+		};
+	}
+}

@@ -2,4 +2,4 @@ Name: System
 Description: 
 Version: 0.1
 Libs: -L/home/joao/Projects/System/System/bin/Debug -lSystem
-Cflags: -I/home/joao/Projects/System/System -I/home/joao/Projects/System/System/Collections/Generic
+Cflags: -I/home/joao/Projects/System/System -I/home/joao/Projects/System/System/Collections/Generic -I/home/joao/Projects/System/System/IO

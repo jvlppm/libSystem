@@ -14,6 +14,8 @@
 #include "Collections/Generic/Queue.h"
 #include "Collections/Generic/Stack.h"
 
+#include "IO/StreamWriter.h"
+
 System::Int32 Main();
 
 int main(int argc, char *argv[])
