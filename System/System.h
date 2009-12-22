@@ -15,6 +15,7 @@
 #include "Collections/Generic/Stack.h"
 
 #include "IO/StreamWriter.h"
+#include "IO/StreamReader.h"
 
 System::Int32 Main();
 

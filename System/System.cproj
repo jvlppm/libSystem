@@ -50,6 +50,7 @@
     <None Include="Collections\Generic\Array.h" />
     <None Include="IO\StreamWriter.h" />
     <None Include="IO\TextWriter.h" />
+    <None Include="IO\StreamReader.h" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="String.cpp" />
@@ -68,6 +69,7 @@
     <Compile Include="InvalidOperationException.cpp" />
     <Compile Include="IO\StreamWriter.cpp" />
     <Compile Include="IO\TextWriter.cpp" />
+    <Compile Include="IO\StreamReader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Collections\" />
