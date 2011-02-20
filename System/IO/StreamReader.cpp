@@ -1,10 +1,13 @@
 #include "StreamReader.h"
 #include "../String.h"
+#include "FileNotFoundException.h"
 using namespace System;
 using namespace System::IO;
 
 StreamReader::StreamReader(String path) : _file(path), EndOfStream(_file.eof())
 {
+	if(!_file.is_open())
+		throw FileNotFoundException(path);
 }
 
 const String StreamReader::ToString() const

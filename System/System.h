@@ -14,6 +14,7 @@
 #include "Collections/Generic/Queue.h"
 #include "Collections/Generic/Stack.h"
 
+#include "IO/FileNotFoundException.h"
 #include "IO/StreamWriter.h"
 #include "IO/StreamReader.h"
 

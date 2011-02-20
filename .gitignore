@@ -1,0 +1,5 @@
+bin
+*.userprefs
+*.pc
+*.tar.gz
+*.pidb

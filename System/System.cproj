@@ -51,6 +51,7 @@
     <None Include="IO\StreamWriter.h" />
     <None Include="IO\TextWriter.h" />
     <None Include="IO\StreamReader.h" />
+    <None Include="IO\FileNotFoundException.h" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="String.cpp" />
@@ -70,6 +71,7 @@
     <Compile Include="IO\StreamWriter.cpp" />
     <Compile Include="IO\TextWriter.cpp" />
     <Compile Include="IO\StreamReader.cpp" />
+    <Compile Include="IO\FileNotFoundException.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Collections\" />

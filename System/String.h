@@ -37,7 +37,7 @@ namespace System
 			String ToLower() const;
 			String TrimStart(char) const;
 			String TrimEnd(char) const;
-			String Trim(char) const;
+			String Trim(char = ' ') const;
 			Collections::Generic::Array<String> Split(char) const;
 			
 			const String ToString() const;
